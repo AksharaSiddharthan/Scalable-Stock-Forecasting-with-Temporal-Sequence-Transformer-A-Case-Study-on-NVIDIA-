@@ -10,8 +10,8 @@ model = Non_AR_TST.from_config("config.json")
 
 
 data = DataSheet(
-path="C:\Users\aksha\OneDrive\Documents\BDM PROJECT\nvidia_stock.csv",
-features=["OPEN,","CLOSE","HIGH","LOW","VOLUME"],
+path=r"C:\Users\aksha\OneDrive\Documents\BDM PROJECT\nvidia_stock.csv",
+features=["OPEN","CLOSE","HIGH","LOW","VOLUME"],
 target=["OPEN"],
 standardize=True,
 seq_len=14,
