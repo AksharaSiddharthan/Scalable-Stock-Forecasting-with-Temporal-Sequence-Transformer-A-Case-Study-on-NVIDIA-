@@ -1,0 +1,14 @@
+{
+    "in_dim" : 4,
+    "out_dim" : 1,
+    "embed_dim" : 128,
+    "ffn_dim" : 512,
+    "num_heads" : 8,
+    "num_layers": 2,
+    "seq_len":14,
+    "pred_len":14,
+    "pe":"LearnablePositionEncoding",
+    "attn":"MultiHeadAttention",
+    "nonlinearity":"GELU",
+    "dropout_p":0.1
+}
