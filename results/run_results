@@ -1,0 +1,321 @@
+C:\Users\aksha\OneDrive\Documents\BDM PROJECT\code>python evals.py
+
+Available columns: ['Date', 'Open', 'High', 'Low', 'Close', 'Volume', 'Dividends', 'Stock Splits']
+X mean: tensor([6.6630e+00, 6.4083e+00, 6.5425e+00, 6.5405e+00, 6.0528e+08])
+X std: tensor([1.7636e+01, 1.6923e+01, 1.7300e+01, 1.7305e+01, 4.3189e+08])
+Y mean: 6.540460109710693
+Y std: 17.30525016784668
+Train samples: 2564, Val samples: 1923, Test samples: 1928
+Train date range: 1999-01-22 05:00:00+00:00 to 2023-08-03 04:00:00+00:00
+Validation date range: 2007-08-02 04:00:00+00:00 to 2024-01-25 05:00:00+00:00
+Test date range: 2013-12-19 05:00:00+00:00 to 2024-07-22 04:00:00+00:00     
+Model device: cpu
+Inputs device: cpu
+Step 100/6000:
+  Train Loss: 0.1958, RMSE: 0.2036
+  Val Loss: 0.5821, RMSE: 0.3313
+  Test Loss: 1.8598, RMSE: 0.5645
+  LR: 0.000100
+Step 200/6000:
+  Train Loss: 0.0232, RMSE: 0.1177
+  Val Loss: 0.6359, RMSE: 0.3439
+  Test Loss: 1.9971, RMSE: 0.5841
+  LR: 0.000200
+Step 300/6000:
+  Train Loss: 0.0169, RMSE: 0.1032
+  Val Loss: 1.0702, RMSE: 0.9746
+  Test Loss: 2.0980, RMSE: 1.0079
+  LR: 0.000300
+Step 400/6000:
+  Train Loss: 0.1595, RMSE: 0.0524
+  Val Loss: 0.7284, RMSE: 0.3350
+  Test Loss: 2.2730, RMSE: 0.5932
+  LR: 0.000400
+Step 500/6000:
+  Train Loss: 0.0027, RMSE: 0.0518
+  Val Loss: 0.7367, RMSE: 0.3477
+  Test Loss: 2.2882, RMSE: 0.6064
+  LR: 0.000500
+Step 600/6000:
+  Train Loss: 0.0080, RMSE: 0.0936
+  Val Loss: 0.7797, RMSE: 0.7631
+  Test Loss: 2.0128, RMSE: 0.7532
+  LR: 0.000600
+Step 700/6000:
+  Train Loss: 0.1629, RMSE: 0.0558
+  Val Loss: 0.7103, RMSE: 0.3345
+  Test Loss: 2.2433, RMSE: 0.5684
+  LR: 0.000700
+Step 800/6000:
+  Train Loss: 0.0019, RMSE: 0.0453
+  Val Loss: 0.7230, RMSE: 0.3383
+  Test Loss: 2.2553, RMSE: 0.5954
+  LR: 0.000800
+Step 900/6000:
+  Train Loss: 0.0013, RMSE: 0.0327
+  Val Loss: 0.7392, RMSE: 0.3369
+  Test Loss: 2.2811, RMSE: 0.5911
+  LR: 0.000900
+Step 1000/6000:
+  Train Loss: 0.1098, RMSE: 0.1032
+  Val Loss: 0.2579, RMSE: 0.2829
+  Test Loss: 1.1022, RMSE: 0.5098
+  LR: 0.001000
+Step 1100/6000:
+  Train Loss: 0.0037, RMSE: 0.0308
+  Val Loss: 0.6457, RMSE: 0.3183
+  Test Loss: 2.0959, RMSE: 0.5657
+  LR: 0.000999
+Step 1200/6000:
+  Train Loss: 0.0009, RMSE: 0.0294
+  Val Loss: 0.5736, RMSE: 0.3043
+  Test Loss: 1.9392, RMSE: 0.5512
+  LR: 0.000996
+Step 1300/6000:
+  Train Loss: 0.0825, RMSE: 0.1205
+  Val Loss: 0.1705, RMSE: 0.2228
+  Test Loss: 1.2129, RMSE: 0.4203
+  LR: 0.000991
+Step 1400/6000:
+  Train Loss: 0.0058, RMSE: 0.0256
+  Val Loss: 0.4379, RMSE: 0.2545
+  Test Loss: 1.6500, RMSE: 0.5034
+  LR: 0.000984
+Step 1500/6000:
+  Train Loss: 0.0008, RMSE: 0.0304
+  Val Loss: 0.3342, RMSE: 0.2185
+  Test Loss: 1.5613, RMSE: 0.4722
+  LR: 0.000976
+Step 1600/6000:
+  Train Loss: 0.0109, RMSE: 0.2046
+  Val Loss: 3.8325, RMSE: 1.8918
+  Test Loss: 4.2777, RMSE: 2.0108
+  LR: 0.000965
+Step 1700/6000:
+  Train Loss: 0.1380, RMSE: 0.0306
+  Val Loss: 0.4380, RMSE: 0.2683
+  Test Loss: 1.6558, RMSE: 0.4983
+  LR: 0.000952
+Step 1800/6000:
+  Train Loss: 0.0008, RMSE: 0.0261
+  Val Loss: 0.2765, RMSE: 0.2132
+  Test Loss: 1.4665, RMSE: 0.4797
+  LR: 0.000938
+Step 1900/6000:
+  Train Loss: 0.0045, RMSE: 0.1392
+  Val Loss: 0.5176, RMSE: 0.6090
+  Test Loss: 1.7090, RMSE: 0.6553
+  LR: 0.000922
+Step 2000/6000:
+  Train Loss: 0.0640, RMSE: 0.1063
+  Val Loss: 0.2143, RMSE: 0.2689
+  Test Loss: 1.2689, RMSE: 0.5054
+  LR: 0.000905
+Step 2100/6000:
+  Train Loss: 0.0015, RMSE: 0.0385
+  Val Loss: 0.1211, RMSE: 0.1406
+  Test Loss: 1.1402, RMSE: 0.3874
+  LR: 0.000885
+Step 2200/6000:
+  Train Loss: 0.0019, RMSE: 0.1229
+  Val Loss: 0.1499, RMSE: 0.1826
+  Test Loss: 1.2271, RMSE: 0.3378
+  LR: 0.000864
+Step 2300/6000:
+  Train Loss: 0.0226, RMSE: 0.0645
+  Val Loss: 0.1220, RMSE: 0.1358
+  Test Loss: 1.1067, RMSE: 0.3531
+  LR: 0.000842
+Step 2400/6000:
+  Train Loss: 0.0017, RMSE: 0.0289
+  Val Loss: 0.1150, RMSE: 0.1592
+  Test Loss: 1.0313, RMSE: 0.3811
+  LR: 0.000819
+Step 2500/6000:
+  Train Loss: 0.0008, RMSE: 0.0273
+  Val Loss: 0.1010, RMSE: 0.1203
+  Test Loss: 1.0182, RMSE: 0.3651
+  LR: 0.000794
+Step 2600/6000:
+  Train Loss: 0.0642, RMSE: 0.0537
+  Val Loss: 0.1343, RMSE: 0.1308
+  Test Loss: 1.2365, RMSE: 0.3923
+  LR: 0.000768
+Step 2700/6000:
+  Train Loss: 0.0021, RMSE: 0.0264
+  Val Loss: 0.1368, RMSE: 0.1259
+  Test Loss: 1.2556, RMSE: 0.4101
+  LR: 0.000741
+Step 2800/6000:
+  Train Loss: 0.0008, RMSE: 0.0272
+  Val Loss: 0.1222, RMSE: 0.1374
+  Test Loss: 1.1822, RMSE: 0.4117
+  LR: 0.000713
+Step 2900/6000:
+  Train Loss: 0.0197, RMSE: 0.0946
+  Val Loss: 0.3024, RMSE: 0.3385
+  Test Loss: 0.8749, RMSE: 0.5048
+  LR: 0.000684
+Step 3000/6000:
+  Train Loss: 0.0086, RMSE: 0.0386
+  Val Loss: 0.1488, RMSE: 0.1867
+  Test Loss: 0.7477, RMSE: 0.3595
+  LR: 0.000655
+Step 3100/6000:
+  Train Loss: 0.0010, RMSE: 0.0276
+  Val Loss: 0.1316, RMSE: 0.1640
+  Test Loss: 0.7939, RMSE: 0.3615
+  LR: 0.000624
+Step 3200/6000:
+  Train Loss: 0.0049, RMSE: 0.0815
+  Val Loss: 0.9081, RMSE: 0.9109
+  Test Loss: 1.5339, RMSE: 1.0043
+  LR: 0.000594
+Step 3300/6000:
+  Train Loss: 0.0438, RMSE: 0.0419
+  Val Loss: 0.0817, RMSE: 0.1342
+  Test Loss: 0.8841, RMSE: 0.3755
+  LR: 0.000563
+Step 3400/6000:
+  Train Loss: 0.0010, RMSE: 0.0263
+  Val Loss: 0.0852, RMSE: 0.1218
+  Test Loss: 0.9307, RMSE: 0.3683
+  LR: 0.000531
+Step 3500/6000:
+  Train Loss: 0.0034, RMSE: 0.1243
+  Val Loss: 0.1364, RMSE: 0.3060
+  Test Loss: 1.0507, RMSE: 0.4110
+  LR: 0.000500
+Step 3600/6000:
+  Train Loss: 0.0209, RMSE: 0.0897
+  Val Loss: 0.1934, RMSE: 0.2215
+  Test Loss: 0.7633, RMSE: 0.3808
+  LR: 0.000469
+Step 3700/6000:
+  Train Loss: 0.0022, RMSE: 0.0344
+  Val Loss: 0.1612, RMSE: 0.1680
+  Test Loss: 0.7794, RMSE: 0.3406
+  LR: 0.000437
+Step 3800/6000:
+  Train Loss: 0.0013, RMSE: 0.1393
+  Val Loss: 0.1283, RMSE: 0.1395
+  Test Loss: 0.8062, RMSE: 0.3176
+  LR: 0.000406
+Step 3900/6000:
+  Train Loss: 0.0232, RMSE: 0.0342
+  Val Loss: 0.1809, RMSE: 0.1654
+  Test Loss: 0.9328, RMSE: 0.3753
+  LR: 0.000376
+Step 4000/6000:
+  Train Loss: 0.0012, RMSE: 0.0281
+  Val Loss: 0.1552, RMSE: 0.1689
+  Test Loss: 0.8980, RMSE: 0.3765
+  LR: 0.000345
+Step 4100/6000:
+  Train Loss: 0.0008, RMSE: 0.0274
+  Val Loss: 0.1233, RMSE: 0.1416
+  Test Loss: 0.8847, RMSE: 0.3560
+  LR: 0.000316
+Step 4200/6000:
+  Train Loss: 0.0281, RMSE: 0.0693
+  Val Loss: 0.1272, RMSE: 0.1471
+  Test Loss: 0.8474, RMSE: 0.3158
+  LR: 0.000287
+Step 4300/6000:
+  Train Loss: 0.0013, RMSE: 0.0303
+  Val Loss: 0.1185, RMSE: 0.1629
+  Test Loss: 0.8351, RMSE: 0.3679
+  LR: 0.000259
+Step 4400/6000:
+  Train Loss: 0.0009, RMSE: 0.0310
+  Val Loss: 0.1015, RMSE: 0.1347
+  Test Loss: 0.8362, RMSE: 0.3482
+  LR: 0.000232
+Step 4500/6000:
+  Train Loss: 0.0205, RMSE: 0.1564
+  Val Loss: 0.0581, RMSE: 0.1362
+  Test Loss: 0.8384, RMSE: 0.2979
+  LR: 0.000206
+Step 4600/6000:
+  Train Loss: 0.0019, RMSE: 0.0248
+  Val Loss: 0.0631, RMSE: 0.1129
+  Test Loss: 0.8252, RMSE: 0.3523
+  LR: 0.000181
+Step 4700/6000:
+  Train Loss: 0.0007, RMSE: 0.0238
+  Val Loss: 0.0583, RMSE: 0.0970
+  Test Loss: 0.8295, RMSE: 0.3438
+  LR: 0.000158
+Step 4800/6000:
+  Train Loss: 0.0085, RMSE: 0.2669
+  Val Loss: 0.1284, RMSE: 0.3152
+  Test Loss: 0.9198, RMSE: 0.4316
+  LR: 0.000136
+Step 4900/6000:
+  Train Loss: 0.0176, RMSE: 0.0243
+  Val Loss: 0.0408, RMSE: 0.0805
+  Test Loss: 0.8376, RMSE: 0.3508
+  LR: 0.000115
+Step 5000/6000:
+  Train Loss: 0.0006, RMSE: 0.0242
+  Val Loss: 0.0413, RMSE: 0.0870
+  Test Loss: 0.8392, RMSE: 0.3604
+  LR: 0.000095
+Step 5100/6000:
+  Train Loss: 0.0072, RMSE: 0.0926
+  Val Loss: 0.1028, RMSE: 0.2749
+  Test Loss: 0.8744, RMSE: 0.3913
+  LR: 0.000078
+Step 5200/6000:
+  Train Loss: 0.0182, RMSE: 0.0309
+  Val Loss: 0.0388, RMSE: 0.0735
+  Test Loss: 0.8147, RMSE: 0.3355
+  LR: 0.000062
+Step 5300/6000:
+  Train Loss: 0.0007, RMSE: 0.0251
+  Val Loss: 0.0395, RMSE: 0.0841
+  Test Loss: 0.8181, RMSE: 0.3486
+  LR: 0.000048
+Step 5400/6000:
+  Train Loss: 0.0006, RMSE: 0.0267
+  Val Loss: 0.0390, RMSE: 0.0743
+  Test Loss: 0.8203, RMSE: 0.3412
+  LR: 0.000035
+Step 5500/6000:
+  Train Loss: 0.0288, RMSE: 0.0484
+  Val Loss: 0.0386, RMSE: 0.0608
+  Test Loss: 0.7978, RMSE: 0.2977
+  LR: 0.000024
+Step 5600/6000:
+  Train Loss: 0.0009, RMSE: 0.0281
+  Val Loss: 0.0398, RMSE: 0.0911
+  Test Loss: 0.8005, RMSE: 0.3430
+  LR: 0.000016
+Step 5700/6000:
+  Train Loss: 0.0007, RMSE: 0.0229
+  Val Loss: 0.0388, RMSE: 0.0762
+  Test Loss: 0.8005, RMSE: 0.3287
+  LR: 0.000009
+Step 5800/6000:
+  Train Loss: 0.0232, RMSE: 0.0720
+  Val Loss: 0.0415, RMSE: 0.0790
+  Test Loss: 0.7935, RMSE: 0.2869
+  LR: 0.000004
+Step 5900/6000:
+  Train Loss: 0.0035, RMSE: 0.0531
+  Val Loss: 0.0404, RMSE: 0.0592
+  Test Loss: 0.7919, RMSE: 0.2974
+  LR: 0.000001
+Step 6000/6000:
+  Train Loss: 0.0021, RMSE: 0.0395
+  Val Loss: 0.0404, RMSE: 0.0600
+  Test Loss: 0.7918, RMSE: 0.3014
+  LR: 0.000000
+
+=== Model Performance Report (Original Scale) ===
+Split      MSE          RMSE         MAE          MAPE (%)     R²           Avg Loss
+----------------------------------------------------------------------
+train      1.9422       1.3936       0.5868       67.5132      0.9752       1.9446
+val        9.8497       3.1384       0.9064       21.3670      0.9495       12.0912
+test       237.1298     15.3990      5.1328       41.5782      0.6198       237.1298
+----------------------------------------------------------------------
