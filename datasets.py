@@ -65,7 +65,6 @@ class DataSheet(Dataset):
 
         self.y_i = self.y_i.unsqueeze(-1)
 
-        # ✅ FIXED sample_dates indexing
         sample_dates = self.df['Date'].iloc[self.seq_len - 1:self.seq_len - 1 + num_samples].reset_index(drop=True)
 
         if self.split_type == "stratified":
