@@ -5,7 +5,7 @@
   "ffn_dim": 512,
 
   "num_heads": 6,
-  "num_layers": 4,
+  "num_layers": 3,
   "seq_len": 20,
   "pred_len": 14,
   "pe": "LearnablePositionEncoding",
@@ -22,4 +22,3 @@
   "betas": [0.9, 0.98],
   "adam_eps": 1e-8
 }
-
