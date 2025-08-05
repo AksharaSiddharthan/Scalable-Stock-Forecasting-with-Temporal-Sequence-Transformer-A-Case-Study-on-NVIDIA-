@@ -6,7 +6,7 @@ from datasets import DataSheet
 import json
 import pandas as pd
 
-# Load config
+# Loading the  config json file
 with open("config.json", "r") as f:
     config = json.load(f)
 
@@ -30,7 +30,7 @@ attention_map = {
     "MultiHeadAttention": MultiHeadAttention,
 }
 
-# Validate encoding/attention strings
+# Validate encoding
 if model_config["pe"] not in encoding_map:
     raise ValueError(f"Unknown positional encoding: {model_config['pe']}")
 if model_config["attn"] not in attention_map:
@@ -39,10 +39,10 @@ if model_config["attn"] not in attention_map:
 model_config["pe"] = encoding_map[model_config["pe"]]
 model_config["attn"] = attention_map[model_config["attn"]]
 
-# Initialize model
+# To Initialize model
 model = Non_AR_TST(**model_config).to(device)
 
-# Load dataset
+# Loading the dataset
 df = pd.read_csv("nvidia_stock.csv")
 print("Available columns:", df.columns.tolist())
 
@@ -66,7 +66,7 @@ train_loader = DataLoader(TensorDataset(*data.train_split()), batch_size=batch_s
 val_loader = DataLoader(TensorDataset(*data.validate_split()), batch_size=batch_size, shuffle=False)
 test_loader = DataLoader(TensorDataset(*data.test_split()), batch_size=batch_size, shuffle=False)
 
-# Train and evaluate
+# Training and Evaluating
 trained_model = train(model, train_loader, val_loader, test_loader, training_config, device)
 metrics = evaluate_model(trained_model, train_loader, val_loader, test_loader, data, device)
 plot_forecast(trained_model, train_loader, val_loader, test_loader, data, seq_len=data.seq_len, pred_len=data.pred_len, device=device)

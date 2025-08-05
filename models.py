@@ -5,7 +5,6 @@ from modules import Projection, SinusoidalPositionalEncoding, LearnablePositionE
 import json
 
 # === MAPPINGS ===
-
 ENCODING_MAP = {
     "SinusoidalPositionalEncoding": SinusoidalPositionalEncoding,
     "LearnablePositionEncoding": LearnablePositionEncoding,
