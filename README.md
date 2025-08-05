@@ -19,7 +19,7 @@ This project implements a **Transformer-based Time Series model (Temporal Sequen
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 * **Source**: [Macrotrends.net](https://www.macrotrends.net/)
 * **Company**: NVIDIA Corporation (NVDA)
@@ -41,7 +41,7 @@ This project implements a **Transformer-based Time Series model (Temporal Sequen
 | `config.json`     | Hyperparameter configuration for model and training          |
 | `run_results.txt` | Logged evaluation metrics for different model runs           |
 ||
----
+
 
 
 ---
