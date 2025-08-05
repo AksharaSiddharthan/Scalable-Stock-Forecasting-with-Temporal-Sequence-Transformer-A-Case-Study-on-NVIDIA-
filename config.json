@@ -1,16 +1,17 @@
 {
   "in_dim": 5,
   "out_dim": 1,
-  "embed_dim": 192,
+  "embed_dim": 198,
   "ffn_dim": 512,
+
   "num_heads": 6,
-  "num_layers": 3,
+  "num_layers": 4,
   "seq_len": 20,
   "pred_len": 14,
   "pe": "LearnablePositionEncoding",
   "attn": "MultiHeadAttention",
   "nonlinearity": "GELU",
-  "dropout_p": 0.06,
+  "dropout_p": 0.04,
   "learning_rate": 0.0001,
   "training_steps": 8000,
   "warmup_steps": 500,
@@ -21,3 +22,4 @@
   "betas": [0.9, 0.98],
   "adam_eps": 1e-8
 }
+
