@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 
 # Activation function lookup
+
 def get_activation_function(name):
     name = name.lower()
     if name == "relu":
