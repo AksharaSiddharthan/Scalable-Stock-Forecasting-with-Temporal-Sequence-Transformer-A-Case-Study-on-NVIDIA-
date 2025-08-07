@@ -70,7 +70,7 @@ This project implements a **Transformer-based Time Series model (Temporal Sequen
 
 ## License
 
-This project is part of an academic capstone submission and is released under the MIT License.
+This project is part of an academic capstone submission and is released under the License.
 
 ---
 
