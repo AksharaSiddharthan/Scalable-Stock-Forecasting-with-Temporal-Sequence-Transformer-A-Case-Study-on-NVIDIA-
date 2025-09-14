@@ -1,32 +1,37 @@
 import pandas as pd
-import numpy as np
 
-csv_path = "nvidia_stock.csv"  # <- update
-df = pd.read_csv(csv_path)
-df['Date'] = pd.to_datetime(df['date'] if 'date' in df.columns else df['Date'])
-df = df.sort_values('Date')
+# Load dataset
+df = pd.read_csv("nvidia_stock.csv")
 
-# Keep standard columns; rename if needed
-cols = ['Open','High','Low','Close','Volume']
-present = [c for c in cols if c in df.columns]
-X = df[present].copy()
+# Convert Date column to datetime
+df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
 
-# Descriptive stats
-q1 = X.quantile(0.25)
-q3 = X.quantile(0.75)
-iqr = q3 - q1
+# Keep only relevant numeric columns
+numeric_cols = ['Open', 'High', 'Low', 'Close', 'Volume']
 
-stats = pd.DataFrame({
-    'count': X.count(),
-    'mean': X.mean(),
-    'median': X.median(),
-    'std': X.std(ddof=1),
-    'min': X.min(),
-    'q1': q1,
-    'q3': q3,
-    'iqr': iqr,
-    'max': X.max()
-}).round(4)
+# Compute descriptive statistics
+desc = pd.DataFrame({
+    'Mean': df[numeric_cols].mean(),
+    'Median': df[numeric_cols].median(),
+    'Std Dev': df[numeric_cols].std(),
+    'Min': df[numeric_cols].min(),
+    '25% (Q1)': df[numeric_cols].quantile(0.25),
+    '50% (Q2)': df[numeric_cols].quantile(0.50),
+    '75% (Q3)': df[numeric_cols].quantile(0.75),
+    'Max': df[numeric_cols].max()
+})
 
-stats.to_csv("descriptive_statistics.csv")
-print(stats)
+# Add Interquartile Range (IQR)
+desc['IQR'] = desc['75% (Q3)'] - desc['25% (Q1)']
+
+# Round values for readability
+desc = desc.round(4)
+
+# Print table to console
+print("\nDescriptive Statistics of NVIDIA Stock Data:\n")
+print(desc)
+
+# Save to CSV for including in report
+desc.to_csv("descriptive_stats_table.csv")
+
+print("\nDescriptive statistics saved to 'descriptive_stats_table.csv'")
